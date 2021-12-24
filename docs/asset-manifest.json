@@ -4,11 +4,9 @@
     "main.js": "/apisproject/static/js/main.d299a7ce.js",
     "static/media/storeproject.png": "/apisproject/static/media/storeproject.d8955b21c4ed1216440e.png",
     "index.html": "/apisproject/index.html",
+    "404.html": "/apisproject/404.html",
     "main.42c1fe86.css.map": "/apisproject/static/css/main.42c1fe86.css.map",
     "main.d299a7ce.js.map": "/apisproject/static/js/main.d299a7ce.js.map"
   },
-  "entrypoints": [
-    "static/css/main.42c1fe86.css",
-    "static/js/main.d299a7ce.js"
-  ]
+  "entrypoints": ["static/css/main.42c1fe86.css", "static/js/main.d299a7ce.js"]
 }
