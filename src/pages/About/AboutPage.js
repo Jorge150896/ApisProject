@@ -55,7 +55,7 @@ const AboutPage = () => {
                   <Card.Subtitle>(Desarrollador Mobile/Web)</Card.Subtitle>
 
                   <Card.Text>
-                    Soy Bachiller Ing. Electrónica - Desarrollador Web/Mobile
+                    Soy Desarrollador Web/Mobile y Bachiller Ing. Electrónica.
                     Con lo que aprendí en mi carrera y mis participaciones en
                     concursos, he adquirido una diversidad de conocimientos que
                     ahora pongo en práctica, tengo una gran capacidad tanto en

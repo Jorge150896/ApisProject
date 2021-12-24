@@ -10,9 +10,15 @@ body {
   justify-content: center;
 }
 .homeSection {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    width: 95%;
+  }
 }

@@ -13,8 +13,8 @@
     box-shadow: 4px 4px 1px #5f00d1;
 
     &-img-top {
-      height: 110px;
-      width: 100px;
+      height: 105px;
+      width: 95px;
       align-self: center;
       margin-top: 20px;
     }
@@ -47,4 +47,8 @@
       }
     }
   }
+}
+
+.disabled-link {
+  pointer-events: none;
 }

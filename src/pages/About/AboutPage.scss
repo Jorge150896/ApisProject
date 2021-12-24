@@ -8,7 +8,7 @@ a {
   text-decoration: none;
 }
 .aboutSection {
-  width: 80%;
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,9 +185,10 @@ a {
     margin-top: auto !important;
   }
   .aboutSection {
+    width: 95%;
+
     &__project {
       padding: 0;
-
       .card {
         &-img {
           &-top {
