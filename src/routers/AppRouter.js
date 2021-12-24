@@ -7,7 +7,7 @@ import ProductDetail from '../pages/ProductDetail/ProductDetail';
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ApisProject/">
       <NavBar />
       <Routes>
         <Route path="/" exact={true} element={<HomePage />} />
