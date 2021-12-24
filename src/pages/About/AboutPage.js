@@ -1,5 +1,5 @@
 import Particle from '../../components/Particle/Particle';
-import { Col, Card, Button } from 'react-bootstrap';
+import { Col, Card, Button, Accordion } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
 import imagen from '../../assets/storeproject.png';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -54,19 +54,36 @@ const AboutPage = () => {
                   <Card.Title>Jorge Vicuña Valle</Card.Title>
                   <Card.Subtitle>(Desarrollador Mobile/Web)</Card.Subtitle>
 
-                  <Card.Text>
-                    Soy Desarrollador Web/Mobile y Bachiller Ing. Electrónica.
-                    Con lo que aprendí en mi carrera y mis participaciones en
-                    concursos, he adquirido una diversidad de conocimientos que
-                    ahora pongo en práctica, tengo una gran capacidad tanto en
-                    la programación de microcontroladores como en el desarrollo
-                    web y móvil. Pertenezco a varios grupos innovadores, en los
-                    cuales he conseguido los primeros lugares en eventos de
-                    programación y robótica. Busco dirigir mi carrera en temas
-                    de Internet of Things y Desarrollo de aplicativos web y
-                    móviles.
-                  </Card.Text>
-
+                  <Accordion>
+                    <Accordion.Item eventKey="0">
+                      <Accordion.Header>Descripción</Accordion.Header>
+                      <Accordion.Body>
+                        Soy Desarrollador Web/Mobile y Bachiller Ing.
+                        Electrónica. Con lo que aprendí en mi carrera y mis
+                        participaciones en concursos, he adquirido una
+                        diversidad de conocimientos que ahora pongo en práctica,
+                        tengo una gran capacidad tanto en la programación de
+                        microcontroladores como en el desarrollo web y móvil.
+                        Pertenezco a varios grupos innovadores, en los cuales he
+                        conseguido los primeros lugares en eventos de
+                        programación y robótica. Busco dirigir mi carrera en
+                        temas de Internet of Things y Desarrollo de aplicativos
+                        web y móviles.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="1">
+                      <Accordion.Header>
+                        Lo aprendido en el programa
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        1- Metodología SCRUM. <br />
+                        2- Prototipado y Diseño.
+                        <br />
+                        3- Programación (Html, Css, JavaScript, Bootstrap, Sass
+                        - React).
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </Accordion>
                   <div className="aboutSection__datos__icons">
                     <a
                       target="_blank"

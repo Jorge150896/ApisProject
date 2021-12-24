@@ -41,9 +41,6 @@ a {
       &-subtitle {
         height: 30px;
       }
-      &-text {
-        text-align: justify;
-      }
 
       .btn {
         width: 100%;
@@ -101,6 +98,10 @@ a {
         text-align: justify;
       }
     }
+    .accordion {
+      margin: 20px 0px;
+    }
+
     &__icons {
       display: flex;
       justify-content: center;
