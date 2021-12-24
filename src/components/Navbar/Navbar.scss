@@ -1,0 +1,33 @@
+.navbar {
+  padding: 0% 10%;
+  background-color: #4201b3;
+  z-index: 3;
+
+  &-brand {
+    margin-top: 1%;
+    svg {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+    }
+  }
+  &-collapse {
+    justify-content: flex-end;
+  }
+  &-logo {
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 8px;
+    color: #fff;
+    pointer-events: none;
+    height: 40px;
+  }
+}
+.nav-item {
+  margin-right: 25px;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0 20px;
+  }
+}
