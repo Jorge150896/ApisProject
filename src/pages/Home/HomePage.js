@@ -18,7 +18,12 @@ const HomePage = () => {
             <GridLoader color={'#5f00d1'} size={25} />
           ) : (
             result.map((product) => (
-              <Product product={product} key={product.id} />
+              <Product
+                product={product}
+                timemin={10}
+                timemax={30}
+                key={product.id}
+              />
             ))
           )}
         </div>

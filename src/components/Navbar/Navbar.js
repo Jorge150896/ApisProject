@@ -8,7 +8,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-sm navbar-dark fixed-top">
         <Link className="navbar-brand" to="/">
           {/* <img src={logo} className="navbar-logo" alt =""/> */}
-          Store Project
+          APIs Project
         </Link>
         <button
           className="navbar-toggler"

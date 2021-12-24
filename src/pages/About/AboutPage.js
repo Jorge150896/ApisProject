@@ -22,7 +22,7 @@ const AboutPage = () => {
               <Card>
                 <Card.Img variant="top" src={imagen} />
                 <Card.Body>
-                  <Card.Title>Store Project</Card.Title>
+                  <Card.Title>APIs Project</Card.Title>
                   <Card.Subtitle>Bootcamp Make It Real</Card.Subtitle>
 
                   <Card.Text>
