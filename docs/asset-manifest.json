@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/apisproject/static/css/main.a1a997b7.css",
-    "main.js": "/apisproject/static/js/main.0a8d8581.js",
+    "main.css": "/apisproject/static/css/main.dce4dd0a.css",
+    "main.js": "/apisproject/static/js/main.53bc720f.js",
     "static/media/storeproject.png": "/apisproject/static/media/storeproject.82f5460431de6e038a10.png",
     "index.html": "/apisproject/index.html",
-    "main.a1a997b7.css.map": "/apisproject/static/css/main.a1a997b7.css.map",
-    "main.0a8d8581.js.map": "/apisproject/static/js/main.0a8d8581.js.map"
+    "main.dce4dd0a.css.map": "/apisproject/static/css/main.dce4dd0a.css.map",
+    "main.53bc720f.js.map": "/apisproject/static/js/main.53bc720f.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1a997b7.css",
-    "static/js/main.0a8d8581.js"
+    "static/css/main.dce4dd0a.css",
+    "static/js/main.53bc720f.js"
   ]
 }
