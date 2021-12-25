@@ -116,6 +116,8 @@ La misión consta de dos partes:
 
 8. Dado el siguiente codePen, el cual solo tiene un HTML, por medio de css llegar a esta respuesta. Imagen. (Para mostrar los servicios debes usar CSS Flexbox o CSS Grid).
 
+- [https://codepen.io/jorge-vicu-a-valle/pen/KKXyaXW?editors=1100](https://codepen.io/jorge-vicu-a-valle/pen/KKXyaXW?editors=1100)
+
 ## 👍 Sígueme en mis redes sociales:
 
 <table>
