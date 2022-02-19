@@ -27,9 +27,18 @@ const Navbar = () => {
               activeclassname="active"
               className="nav-item nav-link"
               exact="true"
-              to="/"
+              to="/fakestore"
             >
-              Home
+              FakeStore
+            </NavLink>
+
+            <NavLink
+              activeclassname="active"
+              className="nav-item nav-link"
+              exact="true"
+              to="/placeholder"
+            >
+              PlaceHolder
             </NavLink>
 
             <NavLink

@@ -26,16 +26,22 @@ const AboutPage = () => {
                   <Card.Subtitle>Bootcamp Make It Real</Card.Subtitle>
 
                   <Card.Text>
-                    Esta página tendrá la responsabilidad de listar una serie de
-                    productos que se debe obtener consumiendo la api de Fake
-                    Store API.
+                    Esta página tendrá la responsabilidad de mostrar el uso de
+                    diferentes APIs.
                   </Card.Text>
                   <a
                     href="https://fakestoreapi.com/"
                     target={'_blank'}
                     rel="noreferrer"
                   >
-                    <Button>Fake Store API</Button>
+                    <Button className="mb-3">Fake Store API</Button>
+                  </a>
+                  <a
+                    href="https://jsonplaceholder.typicode.com/photos"
+                    target={'_blank'}
+                    rel="noreferrer"
+                  >
+                    <Button>PlaceHolder API</Button>
                   </a>
                 </Card.Body>
               </Card>
