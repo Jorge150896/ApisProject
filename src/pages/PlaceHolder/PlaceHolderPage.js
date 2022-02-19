@@ -1,29 +1,30 @@
-import Product from '../../components/ProductCard1/Product';
 import useFetch from '../../hooks/useFetch';
 import GridLoader from 'react-spinners/GridLoader';
 import Particle from '../../components/Particle/Particle';
+import Phphotho from '../../components/PHphotoCard/Phphotho';
 
 import './PlaceHolderPage.scss';
 
 const PlaceHolderPage = () => {
-  const { loading, result } = useFetch(`https://fakestoreapi.com/products`);
+  const { loading, result } = useFetch(
+    `https://jsonplaceholder.typicode.com/photos`
+  );
 
   console.log(result);
+  let resultFilter = result.filter((prev) => prev.id <= 100);
+
+  console.log(resultFilter);
+
   return (
     <>
-      <div className="contentHome">
+      <div className="contentPH">
         <Particle />
-        <div className="homeSection">
+        <div className="phSection">
           {loading || !result ? (
             <GridLoader color={'#5f00d1'} size={25} />
           ) : (
-            result.map((product) => (
-              <Product
-                product={product}
-                timemin={10}
-                timemax={30}
-                key={product.id}
-              />
+            resultFilter.map((product) => (
+              <Phphotho phProduct={product} key={product.id} />
             ))
           )}
         </div>

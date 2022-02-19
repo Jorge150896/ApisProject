@@ -1,4 +1,4 @@
-import Product from '../../components/ProductCard1/Product';
+import Product from '../../components/ProductCard/Product';
 import useFetch from '../../hooks/useFetch';
 import GridLoader from 'react-spinners/GridLoader';
 import Particle from '../../components/Particle/Particle';
@@ -9,6 +9,7 @@ const HomePage = () => {
   const { loading, result } = useFetch(`https://fakestoreapi.com/products`);
 
   console.log(result);
+
   return (
     <>
       <div className="contentHome">

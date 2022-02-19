@@ -10,11 +10,11 @@ La misión consta de dos partes:
 
 # Proyecto React: Apis Project
 
-🚀 Link para ver el proyecto: [https://jorge150896.github.io/apisproject/](https://jorge150896.github.io/apisproject/)
+🚀 Link para ver el proyecto: [https://apisproject.netlify.app/](https://apisproject.netlify.app/)
 
 ## Vista:
 
-[![APIsProject](https://i.imgur.com/REHSlgc.png)](https://jorge150896.github.io/apisproject/)
+[![APIsProject](https://i.imgur.com/REHSlgc.png)](https://apisproject.netlify.app/)
 
 # Cuestionario
 

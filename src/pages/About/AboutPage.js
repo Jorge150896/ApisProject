@@ -26,8 +26,8 @@ const AboutPage = () => {
                   <Card.Subtitle>Bootcamp Make It Real</Card.Subtitle>
 
                   <Card.Text>
-                    Esta página tendrá la responsabilidad de mostrar el uso de
-                    diferentes APIs.
+                    Esta página se actualizará cosntantemente con el uso de Apis
+                    Conocidas.
                   </Card.Text>
                   <a
                     href="https://fakestoreapi.com/"

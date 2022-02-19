@@ -1,0 +1,55 @@
+.phPhoto {
+  padding: 0;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .card {
+    margin: 15px;
+    border: 2px solid #5f00d1;
+    border-radius: 20px;
+    box-shadow: 4px 4px 1px #5f00d1;
+
+    &-img-top {
+      height: 150px;
+      width: 150px;
+      align-self: center;
+      margin-top: 20px;
+      border-radius: 20px;
+    }
+
+    &-title {
+      height: 50px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &-subtitle {
+      height: 40px;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: transparent;
+      color: #4201b3;
+      border-color: #4201b3;
+      border-radius: 50px;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: #4201b3 !important;
+        border-color: #4201b3;
+        color: #fff;
+        box-shadow: none !important;
+      }
+    }
+  }
+}
+
+.disabled-link {
+  pointer-events: none;
+}
