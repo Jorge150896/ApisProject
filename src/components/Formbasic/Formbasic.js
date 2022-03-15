@@ -36,7 +36,7 @@ const Formbasic = ({ handleLogin, loading, error }) => {
 
   var url = window.location.hostname.includes('localhost')
     ? 'http://localhost:8082/api/auth/google'
-    : 'https://qpcode.herokuapp.com/api/auth/google';
+    : 'https://apisproject.herokuapp.com/api/auth/google';
   // var url = "https://qpcode.herokuapp.com/api/auth/google";
   const [form, setForm] = useState({ email: '', password: '' });
   const handleForm = (e) => {
