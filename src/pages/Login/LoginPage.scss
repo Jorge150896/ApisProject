@@ -1,0 +1,187 @@
+.login {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('../../assets/svg/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 100%;
+  margin-bottom: 5%;
+
+  &__content {
+    padding: 1rem 10rem;
+
+    &__left {
+      display: flex;
+      align-items: center;
+      width: 80%;
+      margin-right: 3rem;
+      &__text {
+        &__descripcion {
+          color: white;
+          padding: 1.4rem 0;
+          line-height: 1.8rem;
+        }
+        &__button {
+          width: 50%;
+          @media screen and (max-width: 992px) {
+            width: 100%;
+          }
+        }
+        h1 {
+          font-size: 4rem;
+          font-weight: 600;
+
+          @media screen and (max-width: 992px) {
+            font-size: 3rem;
+          }
+        }
+        p {
+          text-align: justify;
+          width: 95%;
+        }
+      }
+    }
+
+    &__right {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 80%;
+
+      &__robot {
+        width: 80%;
+      }
+
+      &__drone {
+        width: 30%;
+        position: absolute;
+        top: -15px;
+        right: -50px;
+        left: auto;
+        animation: move 5s infinite;
+        transition: all 0.4s ease-in-out;
+      }
+      &__brazorobot {
+        width: 30%;
+        position: absolute;
+        bottom: -6%;
+        left: 0%;
+        transition: all 0.4s ease-in-out;
+        animation: move 8s infinite;
+        animation-delay: 0.5s;
+        transition: all 0.4s ease-in-out;
+      }
+      //Header Animations
+      @keyframes move {
+        0% {
+          transform: translateY(0) rotate(0) scale(1) translateX(0);
+        }
+        50% {
+          transform: translateY(-10px) rotate(20deg) scale(1.1) translateX(10px);
+        }
+        100% {
+          transform: translateY(0) rotate(0deg) scale(1) translateX(0);
+        }
+      }
+      @keyframes move2 {
+        0% {
+          transform: translateY(0) rotate(0) scale(1) translateX(0);
+        }
+        50% {
+          transform: translateY(-10px) rotate(60deg) scale(1.1) translateX(10px);
+        }
+        100% {
+          transform: translateY(0) rotate(0deg) scale(1) translateX(0);
+        }
+      }
+    }
+
+    @media screen and (max-width: 1150px) {
+      padding: 2rem 7rem 5rem;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 1rem 5rem 5rem;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 0.5rem 3rem 5rem;
+    }
+  }
+}
+
+.loginStyled {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3rem;
+
+  @media (max-width: 1300px) {
+    grid-template-columns: repeat(2, 1fr);
+    .login {
+      &__content {
+        &__left {
+          width: 90%;
+          height: 85%;
+        }
+        &__right {
+          width: 90%;
+          height: 80%;
+        }
+      }
+    }
+  }
+  @media (max-width: 1150px) {
+    grid-template-columns: repeat(2, 1fr);
+    .login {
+      &__content {
+        &__left {
+          width: 90%;
+          height: 85%;
+        }
+        &__right {
+          width: 90%;
+          height: 70%;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+
+    .login {
+      &__content {
+        &__left {
+          width: 100% !important;
+          height: 100%;
+          margin-right: 0rem;
+          text-align: center;
+        }
+        &__right {
+          height: 80%;
+          margin-top: 50px;
+          justify-content: center !important;
+          &__phone {
+            width: 80% !important;
+          }
+          &__drone {
+            right: -60px !important;
+          }
+          &__brazorobot {
+            left: -7px !important;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(1, 1fr);
+    .login {
+      &__content {
+        &__left {
+          height: 100%;
+        }
+        &__right {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

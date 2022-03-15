@@ -1,0 +1,116 @@
+.formbasicLogin {
+  align-self: center;
+  width: 100%;
+  justify-content: center;
+  margin-right: 5%;
+  background-color: white;
+  padding: 10%;
+  border-radius: 20px;
+  box-shadow: 7px 7px 8px rgba(25, 29, 43, 0.44);
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(80, 43, 207);
+    font-family: "Montserrat";
+  }
+  &__subtitle {
+    color: #7d7d7d;
+    font-size: 16px;
+  }
+  &__texto {
+    color: #7d7d7d;
+    font-size: 18px;
+    &--link {
+      font-weight: bold;
+      color: rgb(80, 43, 207);
+      margin-left: 5px;
+    }
+  }
+  &__buttons {
+    display: flex;
+
+    &__loginNormal {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .button {
+        background-color: rgb(80, 43, 207);
+        border-color: rgb(80, 43, 207);
+        border-width: 0px;
+        border-radius: 5px;
+        color: white;
+        height: 44px;
+        width: 90%;
+        margin-bottom: 12px;
+        box-shadow: 4px 5px 8px rgba(25, 29, 43, 0.5);
+      }
+      .button:disabled {
+        background-color: rgb(113, 72, 248);
+        border-color: rgb(113, 72, 248);
+        opacity: 0.5;
+        border-width: 0px;
+        border-radius: 5px;
+        color: white;
+        height: 44px;
+        width: 90%;
+        box-shadow: 4px 5px 8px rgba(25, 29, 43, 0.5);
+      }
+    }
+    &__loginGoogle {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      &__button {
+        background-color: white;
+        border-color: rgb(80, 43, 207);
+        border: 2px solid rgb(80, 43, 207) !important;
+        border-width: 0px;
+        border-radius: 5px;
+        color: rgb(80, 43, 207);
+        height: 43px;
+        width: 90%;
+        box-shadow: 3px 3px 2px rgb(80, 43, 207);
+      }
+    }
+  }
+
+  &__space {
+    height: 60px;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media only screen and(min-width: 768px) and (max-width: 1100px) {
+  .formbasicLogin {
+    &__space {
+      margin-bottom: 10px;
+    }
+    &__buttons {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .formbasicLogin {
+    &__buttons {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .formbasicLogin {
+    &__buttons {
+      display: block;
+    }
+  }
+}

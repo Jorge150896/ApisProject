@@ -1,32 +1,56 @@
+@import '../../assets/sass/color';
+
 .navbar {
-  padding: 0% 10%;
-  background-color: #4201b3;
-  z-index: 3;
+  padding: 0.2rem 10%;
+  background-color: rgb(80, 43, 207);
+
+  &-nav {
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    font-size: 1.2rem;
+
+    font-family: 'Ubuntu', 'Montserrat';
+  }
 
   &-brand {
     svg {
-      width: 30px;
-      height: 30px;
-      margin-right: 20px;
+      width: 80px;
+      height: 60px;
+      margin-right: 0px;
     }
   }
   &-collapse {
     justify-content: flex-end;
   }
-  &-logo {
-    padding: 0px 10px 0px 10px;
-    margin-bottom: 8px;
-    color: #fff;
-    pointer-events: none;
-    height: 40px;
-  }
+}
+.nav-link.active {
+  text-decoration: underline #2af6ff;
+  text-underline-offset: 5px;
+  font-family: 'Ubuntu', 'Montserrat';
+}
+.avtivare {
+  text-decoration: underline #2af6ff;
+  text-underline-offset: 5px;
+  font-family: 'Montserrat';
+  color: white;
 }
 .nav-item {
   margin-right: 25px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .navbar {
-    padding: 0 20px;
+    padding: 0.5rem 20px;
+    &-nav {
+      align-items: flex-start;
+    }
+    &-brand {
+      svg {
+        width: 40px;
+        height: 50px;
+        margin-right: 10px;
+      }
+    }
   }
 }

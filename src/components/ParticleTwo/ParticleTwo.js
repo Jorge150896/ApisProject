@@ -18,7 +18,7 @@ const Particle = () => {
       options={{
         background: {
           color: {
-            value: 'white'
+            value: 'rgb(80, 43, 207)'
           }
         },
         fpsLimit: 60,
@@ -38,7 +38,7 @@ const Particle = () => {
             bubble: {
               distance: 400,
               duration: 2,
-              opacity: 0.8,
+              opacity: 1,
               size: 40
             },
             push: {
@@ -52,13 +52,13 @@ const Particle = () => {
         },
         particles: {
           color: {
-            value: 'rgb(80, 43, 207)'
+            value: '#2af6ff'
           },
           links: {
-            color: 'rgb(80, 43, 207)',
+            color: '#2af6ff',
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 1,
             width: 1
           },
           collisions: {

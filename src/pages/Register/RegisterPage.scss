@@ -1,0 +1,101 @@
+.register {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // background-color: rgb(80, 43, 207);
+
+  &__form {
+    margin-top: 3%;
+    width: 60%;
+    align-self: center;
+    background-color: white;
+    padding: 5% 10% 0%;
+    border-radius: 20px;
+    box-shadow: 7px 7px 8px rgba(25, 29, 43, 0.44);
+
+    &__subtitle {
+      color: #7d7d7d;
+      font-size: 16px;
+    }
+    &__back {
+      display: flex;
+      font-size: 16px;
+      font-weight: bold;
+
+      color: rgb(80, 43, 207);
+      font-family: "Montserrat";
+    }
+    &__title {
+      margin-top: 5%;
+      display: flex;
+      font-size: 30px;
+      font-weight: bold;
+
+      color: rgb(80, 43, 207);
+      font-family: "Montserrat";
+    }
+
+    &__textButton {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &__datos {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+
+      &__space {
+        height: 50px;
+        width: 100%;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        background-color: red;
+      }
+      &__button {
+        justify-content: center;
+        display: flex;
+        margin-bottom: 10%;
+      }
+    }
+
+    .button {
+      width: 40% !important;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .button {
+    background-color: rgb(80, 43, 207);
+    border-color: rgb(80, 43, 207);
+    border-width: 0px;
+    border-radius: 5px;
+    color: white;
+    height: 41px;
+    width: 40%;
+  }
+  .button:disabled {
+    background-color: rgb(113, 72, 248);
+    border-color: rgb(113, 72, 248);
+    opacity: 0.5;
+    border-width: 0px;
+    border-radius: 5px;
+    color: white;
+    height: 41px;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .register {
+    &__form {
+      width: 80%;
+      &__datos {
+        width: 110%;
+      }
+    }
+    .button {
+      width: 100% !important;
+    }
+  }
+}
