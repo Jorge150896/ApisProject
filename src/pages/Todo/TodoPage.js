@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react';
 import Formulario from '../../components/Formulario/Formulario';
 import ListaTareas from '../../components/ListaTareas/ListaTareas';
+import { types } from '../../types/types';
+import { useNavigate } from 'react-router-dom';
+
 // import tareas from '../../utils/tareas';
 import {
   getTareas,
@@ -17,8 +20,9 @@ export default function TodoPage() {
   // Estados del componente
   const [listaTareas, setListaTareas] = useState([]);
   const [editable, setEditable] = useState(null);
-  const { user } = useContext(AuthContext);
+  const { user, dispatch } = useContext(AuthContext);
   const [loadPage, setLoadPage] = useState(false);
+  const navigate = useNavigate();
 
   const getTareasFromApi = async () => {
     setLoadPage(false);
@@ -49,11 +53,19 @@ export default function TodoPage() {
           pauseOnHover: false
         });
       } else {
-        toast.error(`${data.msg}`, {
-          position: toast.POSITION.BOTTOM_LEFT,
-          autoClose: 3000,
-          pauseOnHover: false
-        });
+        if (data.msg === 'Token no válido') {
+          dispatch({ type: types.logout });
+
+          navigate('/login', {
+            replace: true
+          });
+        } else {
+          toast.error(`${data.msg}`, {
+            position: toast.POSITION.BOTTOM_LEFT,
+            autoClose: 3000,
+            pauseOnHover: false
+          });
+        }
       }
     });
   };
@@ -74,11 +86,19 @@ export default function TodoPage() {
           pauseOnHover: false
         });
       } else {
-        toast.error(`${data[0].msg}`, {
-          position: toast.POSITION.BOTTOM_LEFT,
-          autoClose: 3000,
-          pauseOnHover: false
-        });
+        if (data.msg === 'Token no válido') {
+          dispatch({ type: types.logout });
+
+          navigate('/login', {
+            replace: true
+          });
+        } else {
+          toast.error(`${data[0].msg}`, {
+            position: toast.POSITION.BOTTOM_LEFT,
+            autoClose: 3000,
+            pauseOnHover: false
+          });
+        }
       }
     });
   };
@@ -104,11 +124,19 @@ export default function TodoPage() {
             pauseOnHover: false
           });
         } else {
-          toast.error(`${data.msg}`, {
-            position: toast.POSITION.BOTTOM_LEFT,
-            autoClose: 3000,
-            pauseOnHover: false
-          });
+          if (data.msg === 'Token no válido') {
+            dispatch({ type: types.logout });
+
+            navigate('/login', {
+              replace: true
+            });
+          } else {
+            toast.error(`${data.msg}`, {
+              position: toast.POSITION.BOTTOM_LEFT,
+              autoClose: 3000,
+              pauseOnHover: false
+            });
+          }
         }
       }
     );
